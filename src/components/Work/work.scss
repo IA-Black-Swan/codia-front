@@ -1,0 +1,56 @@
+.work {
+    height: min-content;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        background-color: #f5f5ff;
+        width: 55rem;
+        height: 56rem;
+        margin: 5rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: min-content;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    &__content {
+        margin: 2rem;
+        font-family: 'Montserrat', sans-serif;
+
+        &-title {
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 1.4rem;
+            text-align: justify;
+            margin-bottom: 2rem;
+        }
+
+        &-btn {
+            height: 4rem;
+            width: 12rem;
+            background-color: #b0b0ff;
+            border: none;
+            text-decoration: none;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        
+            &:hover {
+                background-color: #00004f;
+                color: white;
+            }
+        }
+
+    }
+}
