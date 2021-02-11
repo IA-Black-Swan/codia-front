@@ -1,3 +1,71 @@
-#header {
-    color: red;
+.header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-right: 5rem;
+    margin-left: 5rem;
+    width: 95%;
+    height: 60vh;
+
+    &__text {
+
+        &-top {
+            grid-column: 2 / 7;
+            grid-row: 3 / 4;
+    
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.4rem;
+            font-size: 10rem;
+            font-weight: 600;
+            color: white;
+            font-size: 3rem;
+        }
+    
+        &-bottom {
+            grid-column: 2 / 7;
+            grid-row: 4 / 5;
+    
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+            color: #fff;
+            font-size: 3rem;
+        }
+    }
+
+    &__btn {
+        grid-column: 2 / 2;
+        grid-row: 5 / 6;
+        height: 5rem;
+        background-color: #b0b0ff;
+        border: none;
+        text-decoration: none;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+    
+        &:hover {
+            background-color: #00004f;
+            color: white;
+        }
+    }
+
+    &__video {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        height: 60vh;
+        display: block;
+        filter: brightness(40%);
+        z-index: -1;
+    }
+}
+
+.top {
+    font-size: 10rem;
+    text-transform: uppercase;
+}
+
+.bottom {
+    font-size: 5rem;
 }
