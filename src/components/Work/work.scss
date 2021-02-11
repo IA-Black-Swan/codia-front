@@ -1,13 +1,21 @@
 .work {
-    height: min-content;
+    //height: min-content;
     margin: 7rem 10rem;
     display: flex;
     justify-content: space-between;
+    gap: 7rem;
 
     &__item {
+        flex: 1;
         background-color: #fafafa;
         width: 50rem;
-        height: min-content;
+        //height: min-content;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            transform: translateY(-1rem);
+            box-shadow: rgb(176, 176, 176) 0px 20px 30px -10px;
+        }
     }
 
     &__img {
