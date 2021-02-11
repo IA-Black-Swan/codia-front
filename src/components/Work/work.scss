@@ -1,15 +1,13 @@
 .work {
     height: min-content;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 7rem 10rem;
     display: flex;
     justify-content: space-between;
 
     &__item {
-        background-color: #f5f5ff;
-        width: 55rem;
-        height: 56rem;
-        margin: 5rem;
+        background-color: #fafafa;
+        width: 50rem;
+        height: min-content;
     }
 
     &__img {
@@ -47,10 +45,9 @@
             font-family: 'Montserrat', sans-serif;
         
             &:hover {
-                background-color: #00004f;
+                background-color: #3a0ca3;
                 color: white;
             }
         }
-
     }
 }

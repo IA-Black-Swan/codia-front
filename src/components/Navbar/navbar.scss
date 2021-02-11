@@ -3,8 +3,8 @@
     grid-template-columns: 50% 50%;
 
     height: 6rem;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
+    margin-right: 10rem;
+    margin-left: 10rem;
 
     &__item {
         margin-top: 2rem;
@@ -44,7 +44,7 @@
         text-transform: uppercase;
 
         &:hover{
-            color: #2929ff;
+            color: #3a0ca3;
         }
     }
 }

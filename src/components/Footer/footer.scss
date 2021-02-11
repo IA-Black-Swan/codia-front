@@ -1,4 +1,14 @@
 .footer {
-    background-color: #000b0f;
+    background-color: #060014;
     height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 4rem;
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+        color: white;
+    }
 }
