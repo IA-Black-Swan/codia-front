@@ -11,7 +11,7 @@
     background-color: white;
     height: 6rem;
 
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    //box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
     &__item {
         margin-top: 2rem;
@@ -57,4 +57,13 @@
             -webkit-text-stroke-color: black;
         }
     }
+}
+
+html:not([data-scroll='0']) {
+  
+    .navbar {
+      position: fixed;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+    
 }
