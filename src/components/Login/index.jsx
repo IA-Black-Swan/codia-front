@@ -1,4 +1,5 @@
 import "./login.scss"
+import { FaGithub, FaKey, FaUser } from "react-icons/fa";
 
 
 export const Login = () => {
@@ -15,8 +16,17 @@ export const Login = () => {
                     </p>
 
                     <form class="login__form">
-                        <input class="login__form-box" placeholder="Email" type="email"/><br/>
-                        <input class="login__form-box" placeholder="Password" type="password"/><br/>
+                        <div className="login__form-input">
+                            <FaUser size="1.5em" />
+                            <input class="login__form-box" placeholder="Email" type="email"/><br/>
+                            <span class="fa fa-info-circle errspan"></span>
+                        </div>
+
+                        <div className="login__form-input">
+                            <FaKey size="1.5em" />
+                            <input class="login__form-box" placeholder="Password" type="password"/><br/>
+                        </div>
+                    
                         <input class="login__form-button" type="submit" value="Login"/>
                     </form> 
                 </div>
