@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .header {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -17,7 +19,7 @@
             letter-spacing: 0.4rem;
             font-size: 10rem;
             font-weight: 600;
-            color: white;
+            color: $color-white;
             font-size: 3rem;
             margin: auto;
             

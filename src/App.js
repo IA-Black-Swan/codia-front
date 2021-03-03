@@ -14,13 +14,23 @@ function App() {
   useEffect(() => {
     addedScripts()
     isRendered(true)
-  },[])
+  }, [])
   return <div className="App">
-    <Navbar/>
-    <Header/>
-    <OurWork/>
-    <Cards/>
-    <Footer/> 
+    <Navbar />
+    <Header />
+    <OurWork />
+    <Cards />
+    <Footer />
+    <div className="card-login">
+      dasdsada
+    </div>
+    {/* <div className="container0" style={{ backgroundColor: 'red' }}>
+      <div style={{ height: "300px", width: "300px", backgroundColor: 'lightcoral' }}></div><span>dfsafdsfsdfdsf</span>
+    </div>
+    <div className="container0" style={{ backgroundColor: 'green' }}>2</div>
+    <div className="container0" style={{ backgroundColor: 'lightblue' }}>3</div>
+    <div className="container0" style={{ backgroundColor: 'pink' }}>4</div>
+    <div className="container0" style={{ backgroundColor: 'orange' }}>5</div> */}
 
   </div>;
 }
