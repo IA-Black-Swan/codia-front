@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer";
 import React, { useEffect, useState } from "react"
 import { OurWork } from "./components/OurWork";
 import { Cards } from "./components/Cards";
+import { Login } from "./components/Login";
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
     isRendered(true)
   }, [])
   return <div className="App">
+    <Login />
+
+    {/*
     <Navbar />
     <Header />
     <OurWork />
@@ -24,6 +28,7 @@ function App() {
     <div className="card-login">
       dasdsada
     </div>
+    
     {/* <div className="container0" style={{ backgroundColor: 'red' }}>
       <div style={{ height: "300px", width: "300px", backgroundColor: 'lightcoral' }}></div><span>dfsafdsfsdfdsf</span>
     </div>
