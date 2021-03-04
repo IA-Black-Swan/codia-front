@@ -76,3 +76,14 @@
         }
     }
 }
+
+.MuiInputBase-root {
+    width: 30rem !important;
+}
+
+.MuiButtonBase-root {
+    width: 30px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
