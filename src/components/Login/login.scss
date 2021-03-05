@@ -57,33 +57,17 @@
             border-color: #9c96ff;
         }
     }
-
-    &-button {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #5b51ff;
-        color: white;
-        width: 15rem;
-        height: 3rem;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #1c1852;
-        }
-    }
 }
 
-.MuiInputBase-root {
-    // width: 30rem !important;
+
+.MuiFormControl-root {
+    width: 100%;
 }
 
 .MuiButtonBase-root {
     width: 30px;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.3rem;
 }

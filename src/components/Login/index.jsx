@@ -2,38 +2,26 @@ import "./login.scss"
 import React from 'react';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import HttpsOutlinedIcon from '@material-ui/icons/HttpsOutlined';
-import { Grid, TextField, FormControl, InputAdornment, InputLabel, Input, Button } from '@material-ui/core';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import { FormControl, InputAdornment, Input, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 
-// botones
+
 const useStyles = makeStyles(theme => ({
-    grid: {
-        width: '90%',
+    input: {
+        width: '80%',
+        fontSize: '1.3rem',
+        padding: '0.4rem'
+        
     },
-    textField: {
-        width: '100%',
+
+    field: {
+        alignItems: 'center',
+        marginTop: '1rem',
+        marginBottom: '1rem'
     }
 }));
 
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         '& > *': {
-//             margin: theme.spacing(1),
-//         },
-//     },
-// }));
-
-
-
-/*
-const useStyles = makeStyles((theme) => ({
-    margin: {
-      margin: theme.spacing(1),
-    },
-}));
-*/
 
 export const Login = () => {
 
@@ -49,47 +37,39 @@ export const Login = () => {
                         Login
                     </p>
 
-                    {/*
-                    <form class="login__form">
-                        <div className="login__form-input">
-                            <FaUser size="1.5em" />
-                            <input class="login__form-box" placeholder="Email" type="email"/><br/>
-                        </div>
-
-                        <div className="login__form-input">
-                            <FaKey size="1.5em" />
-                            <input class="login__form-box" placeholder="Password" type="password"/><br/>
-                        </div>
-                    
-                        <input class="login__form-button" type="submit" value="Login"/>
-                    </form> 
-                    */}
-
-                    <div className={classes.margin}>
-                        <Grid container spacing={1} alignItems="flex-end">
-                            <Grid item>
+                    <div className="form">
+                        <FormControl className={classes.margin, classes.field}>    
+                            <Input
+                            classes={{ root: classes.input }}
+                            id="input-with-icon-adornment"
+                            placeholder="Email"
+                            type="email"
+                            startAdornment={
+                                <InputAdornment position="start">
                                 <PersonOutlineOutlinedIcon fontSize="large" />
-                            </Grid>
-                            <Grid item classes={{ root: classes.grid }}>
-                                <TextField classes={{ root: classes.textField }} id="input-with-icon-grid" label="Email" />
-                            </Grid>
-                        </Grid>
-                    </div>
+                                
+                                </InputAdornment>
+                            }
+                            />
+                        </FormControl>
 
-                    <div className={classes.margin}>
-                        <Grid container spacing={1} alignItems="flex-end">
-                            <Grid item>
+                        <FormControl className={classes.margin, classes.field}>    
+                            <Input
+                            classes={{ root: classes.input }}
+                            id="input-with-icon-adornment"
+                            placeholder="Password"
+                            type="password"
+                            startAdornment={
+                                <InputAdornment position="start">
+                                    
                                 <HttpsOutlinedIcon fontSize="large" />
-                            </Grid>
-                            <Grid item classes={{ root: classes.grid }}>
-                                <TextField classes={{ root: classes.textField }} id="input-with-icon-grid" label="Password" />
-                            </Grid>
-                        </Grid>
+                                </InputAdornment>
+                            }
+                            />
+                        </FormControl>
                     </div>
 
-                    <Button variant="contained" color="primary">
-                        Login
-                    </Button>
+                    <Button variant="contained" color="primary">Login</Button>
                 </div>
 
                 <div className="login__card-footer"></div>
